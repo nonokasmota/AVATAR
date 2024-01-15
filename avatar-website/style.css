@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@400;700&display=swap');
+
+body {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  align-items: center;
+  background-color:  #181b19;
+}
+
+div {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  height: auto;
+  justify-content: space-between;
+  align-self: center;
+  align-items: center;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  overflow: visible;
+}
+
+#randomize, #recolor {
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  font-size: larger;
+  font-weight: 700;
+}
+
+#canvas {
+  width: 60%;
+  justify-content: center;
+}
+
+#options {
+  width: 40%;
+  flex-direction: column;
+  overflow: visible;
+  align-self: center;
+  align-items: center;
+  text-align: left;
+}
+
+.menu {
+  flex-direction: column;
+}
+
+.dropdownContent{
+  flex-direction: column;
+  align-self: center;
+  align-items: center;
+}
+
+button {
+  width: 70%;
+  appearance: none;
+  background-color: #a78fac;
+  border: 0px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  color: #181b19;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Lexend', sans-serif;
+  font-size: medium;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+  margin-left: 5%;
+  margin-right: 20%;
+  min-height: 5%;
+  min-width: 0;
+  outline: none;
+  padding: none;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  will-change: transform;
+  word-wrap: break-word;
+}
+
+#saveImg {
+  background-color: #5f9e7d;
+  margin-top: 2vh;
+  margin-bottom: 5vh;
+  font-size: larger;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: small;
+  width: 70%;
+  font-weight: 400;
+  color: #a78fac;
+  text-align: left;
+  font-family: 'Lexend', sans-serif;
+  margin: 0%;
+  margin-left: 5%;
+  margin-right: 20%;
+}
+
+button:disabled {
+  pointer-events: none;
+}
+
+button:hover, button:focus {
+  background-color: #837286;
+}
+
+button:not(:hover), button:not(:focus) {
+  background-color: #a78fac;
+}
+
+#save:hover, #save:focus {
+  background-color:#4f8066;
+}
+
+#save:not(:hover), #save:not(:focus) {
+  background-color:#5f9e7d;
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+.dropbtn {
+  cursor: pointer;
+  font-size: larger;
+  font-weight: 700;
+}
+
+.dropdownContent {
+  display: none;
+}
+
+.dropdownContent button {
+  text-decoration: none;
+  background-color: #181b19;
+  color: #a78fac;
+}
+
+.dropdownContent button:hover {
+  background-color: rgb(34, 40, 40);
+}
+
+.show {display:inline-flex} 
+
+
+@media only screen and (max-width: 600px) {
+  #options {
+    flex-direction: column;
+  }
+
+  button {
+    max-width: 100%;
+    word-wrap: none;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+  }
+}

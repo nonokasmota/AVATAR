@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>EX AVP02 ANA MOTA</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="sketch.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.7.0/lib/p5.js"></script>
+</head>
+
+<body>
+    <div id="canvas"></div>
+    <div id="options">
+        <h1>CHANGE</h1>
+        <div class="menu">
+            <button onclick="dropdownFace()" class="dropbtn">FACE</button>
+            <div id="face" class="dropdownContent">
+                <button onclick="eyesChange()">EYES</button>
+                <button onclick="mouthChange()">MOUTH</button>
+            </div>
+        </div>
+        <div class="menu">
+            <button onclick="dropdownHair()" class="dropbtn">HAIR</button>
+            <div id="hair" class="dropdownContent">
+                <button onclick="hairFrontChange()">FRONT</button>
+                <button onclick="hairBackChange()">BACK</button>
+                <button onclick="facialHairChange()">FACIAL HAIR</button>
+            </div>
+        </div>
+        <div class="menu">
+            <button onclick="dropdownWardrobe()" class="dropbtn">WARDROBE</button>
+            <div id="wardrobe" class="dropdownContent">
+                <button onclick="glassesChange()">GLASSES</button>
+            </div>
+        </div>
+        <button id="recolor" onclick="colorChange();">COLORS</button>
+        <button id="randomize" onclick="window.location.reload();">RANDOM</button>
+        <button id="saveImg" onclick="saveImg()" onclick="to_top()">DOWNLOAD</button>
+    </div>
+</body>
+
+</html> 
